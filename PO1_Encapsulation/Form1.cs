@@ -6,7 +6,7 @@ namespace PO1_Encapsulation
         Personnage dragon = new();
         public Form1()
         {
-        InitializeComponent();
+            InitializeComponent();
             joueur.PointsDevie = 10;
             joueur.PointsDePuissance = 1;
 
@@ -17,7 +17,7 @@ namespace PO1_Encapsulation
         private void btn_attaquer_Click(object sender, EventArgs e)
         {
             lbl_pointsVieJoueur.Text = "vie du joueur : " + joueur.PointsDeVie.ToString();
-            lbl_pointsVieDragon.Text = "vie du dragon : " + dragon.PointsDeVie. ToString();
+            lbl_pointsVieDragon.Text = "vie du dragon : " + dragon.PointsDeVie.ToString();
             lbl_puissanceAttaqueJoueur.Text = "Attaque du joueur : " + joueur.PointsDePuissance.ToString();
             lbl_puissanceAttaqueDragon.Text = "Attaque du dragon : " + dragon.PointsDePuissance.ToString();
         }
@@ -28,6 +28,11 @@ namespace PO1_Encapsulation
         }
 
         private void btn_puissanceAttaque_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
