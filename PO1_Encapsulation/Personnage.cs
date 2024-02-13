@@ -10,35 +10,35 @@ namespace PO1_Encapsulation
     public class Personnage
     {
         string nom;
-        private int PointsDeVie;
-        int PointsDePuissance;
+        private int pointsDeVie;
+        int pointsDePuissance;
 
         public string Nom { get => nom; set => nom = value; }
-        public int PointsDevie
+        public int PointsDeVie
         { 
-            get => PointsDeVie;
+            get => pointsDeVie;
             set
             {
-                if (value < 0)
+                if (value > 0)
                 {
-                    PointsDeVie = 0;
+                    pointsDeVie = value;
                 }
                 else
                 {
-                    PointsDeVie = value;
+                    pointsDeVie = 0;
                 }
             }
 
         }
         
 
-        public int pointsDePuissance { get => pointsDePuissance; set => pointsDePuissance = value; }
+        public int PointsDePuissance { get => pointsDePuissance; set => pointsDePuissance = value; }
 
         public bool EstEnVie
         {
             get
             {
-                if (PointsDeVie > 0)
+                if (pointsDeVie > 0)
                 {
                     return true;  
                 }
